@@ -1,0 +1,58 @@
+%title {
+    font-family: f(sans);
+    font-size: 12px;
+    font-weight: normal;
+    color: c();
+    text-transform: uppercase;
+}
+
+%title-cursive, .title-cursive {
+    @extend %Bellissima;
+    font-size: 84px;
+    line-height: 50px;
+    text-transform: none;
+    text-align: center;
+    color: c(beige);
+    @include under(mobile) {
+        font-size: 64px;
+        line-height: 50px;
+    }
+}
+
+%title-big, .title-big {
+    @extend %BodoniSvtyBook;
+    font-size: 44px;
+    line-height: 50px;
+    text-transform: uppercase;
+    letter-spacing: 4.5px;
+    text-align: center;
+    color: c(beige);
+    @include under(mobile) {
+        font-size: 30px;
+        line-height: 35px;
+    }
+}
+
+%title-proximate-events, .title-proximate-events {
+    @extend %BodoniSvtyBook;
+    font-size: 36px;
+    line-height: 50px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+    color: #13322a;
+}
+
+
+%title-menu-cart, .title-menu-cart {
+    @extend %BodoniSvtyBook;
+    font-size: 36px;
+    line-height: 45px;
+    text-transform: uppercase;
+    letter-spacing: 11px;
+    text-align: center;
+    color: #13322a;
+    @include under(mobile) {
+        letter-spacing: 5px;
+    }
+}

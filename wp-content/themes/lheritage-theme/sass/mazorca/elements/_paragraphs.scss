@@ -1,0 +1,50 @@
+%paragraph {
+    font-family: f(sans);
+    font-size: 22px;
+    font-weight: normal;
+    color: c();
+    line-height: lh(lg);
+}
+
+%paragraph-small {
+    @extend %paragraph;
+    font-size: 15px;
+    font-weight: 200;
+    color: c();
+    line-height: lh(md);
+}
+
+%paragraph-addres, .paragraph-addres {
+    font-family: f(BodoniSvtyBook);
+    font-size: 10px;
+    font-weight: normal;
+    color: #312822;
+    line-height: 19px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+%paragraph-footer-address, .paragraph-footer-address {
+font-family: f(BodoniSvtyBook);
+    font-size: 10px;
+    font-weight: normal;
+    line-height: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+%paragraph-content-text, .paragraph-content-text{
+    @extend %BodoniSvtyBook;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 21px;
+    color: c(beige);
+}
+
+%paragraph-events-title, .paragraph-events-title{
+    @extend %BodoniSvtyBook;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 21px;
+    color: #13322a;
+}

@@ -1,0 +1,103 @@
+%link {
+	color: c();
+	cursor: pointer;
+	font-weight: normal;
+	text-decoration: none;
+	text-transform: uppercase;
+
+	&:hover,
+	&:active {
+		//color: c(gold);
+	}
+}
+
+%link-lenguaje, .link-lenguaje {
+	@extend %link;
+	font-family: f(BodoniSvtyBook);
+	font-size: 10px;
+	font-style: normal;
+	font-weight: normal;
+	letter-spacing: 1.5px;
+	line-height: 14px;
+	&:hover,
+	&:active {
+		// color: c(ocher);
+	}
+}
+
+%link-menu, .link-menu {
+	@extend %link;
+	font-family: f(BodoniSvtyBook);
+	font-size: 34px;
+	line-height: 75px;
+	letter-spacing: 1.5px;
+	font-style: normal;
+	font-weight: normal;
+	&:hover,
+	&:active {
+		color: c(ocher);
+	}
+	@include under(mobile) {
+		font-size: 30px;
+		line-height: 56px;
+	}
+}
+
+%link-decoration, .link-decoration {
+	@extend %link;
+	font-family: f(BodoniSvtyBook);
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: 4.5px;
+	font-style: italic;
+	font-weight: normal;
+	text-decoration: underline;
+	&:hover,
+	&:active {
+		// color: c(ocher);
+	}
+}
+
+%link-user{
+	@extend %link;
+	font-size: 13px;
+}
+
+%link-italic {
+	@extend %link;
+	font-family: f(inputs);
+	font-size: 16px;
+	font-style: italic;
+}
+
+%link-hover {
+  @extend %link;
+	color: c(beige);
+
+  &:hover {
+    color: c();
+  }
+}
+
+%link-form {
+	@extend %link;
+	font-size: 11px;
+	text-transform: none;
+	text-decoration: underline;
+}
+
+%link-italic-footer{
+	@extend %link-italic;
+	font-size: 11px;
+}
+
+%link-footer {
+	@extend %link;
+	font-size: 10px;
+	font-weight: 200;
+
+	&:hover,
+	&:active {
+		color: c(ocher);
+	}
+}

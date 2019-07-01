@@ -1,0 +1,34 @@
+//_________________________ Config:Fuentes _________________________ \\
+
+/**
+ * Declare fonts using the Mixin
+ */
+
+@include declara-font-face(BellissimaScriptPro, '../fonts/BellissimaScriptPro', normal, normal);
+
+@include declara-font-face(Bodoni Six ITC TT, '../fonts/BodoniSixITCTTBook', normal, normal);
+
+@include declara-font-face(Bodoni SvtyTwo ITC TT, '../fonts/BodoniSvtyTwoITCTT-Book', normal, normal);
+
+@include declara-font-face(Bodoni SvtyTwo ITC TT, '../fonts/BodoniSvtyTwoITCTTBook', normal, normal);
+
+@include declara-font-face(Bodoni SvtyTwo ITC TT, '../fonts/BodoniSvtyTwoITCTTBookIta', normal, italic);
+
+@include declara-font-face(BodoniSvtyTwoSCITCTT-Book, '../fonts/BodoniSvtyTwoSCITCTT-Book', normal, italic);
+
+/// Refer to font families through mapped variables.
+/// Font families must be written as lists, that is, between parenthesis.
+///
+///
+
+$fonts:(
+    Bellissima:        ('BellissimaScriptPro', sans-serif),
+    BodoniSix:         ('Bodoni Six ITC TT', sans-serif),
+    BodoniSvty:        ('Bodoni SvtyTwo ITC TT', serif),
+    BodoniSvtyBook:    ('Bodoni SvtyTwo ITC TT', sans-serif),
+    BodoniSvtySCBook:  ('BodoniSvtyTwoSCITCTT-Book', sans-serif)
+);
+
+@function f($font) {
+	@return map-get($fonts, $font);
+}

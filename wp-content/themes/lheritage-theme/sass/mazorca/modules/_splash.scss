@@ -1,0 +1,94 @@
+body{
+     //background-color:#262626;
+     //background-image:url('../images/background.jpg');
+     //background-blend-mode: soft-light;
+
+     // background: linear-gradient(to right,	rgba(38, 38, 38, 0.3), rgba(38, 38, 38, 0.3)),url('../images/background.jpg');
+     // background-blend-mode: multiply;
+     // background-size: cover;
+     // background-position: center;
+     // background-repeat: no-repeat;
+     // width: 100%;
+     // height: auto;
+
+}
+.splash{
+    font-size: 10px;
+    &__container{
+        justify-content:center;
+        align-items:center;
+        display: flex;
+        height: 85vh;
+        @include under(sm){
+            padding: 40px;
+            height: 60vh;
+        }
+    }
+    &__image{
+        width:330px;
+    }
+    &__footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        color:white;
+        width: 100%;
+        @include under(sm){
+            flex-direction: column
+        }
+
+        &--p{
+            text-align: center;
+            margin: auto;
+            width:33.33%;
+            text-transform: uppercase;
+            line-height: 2;
+            letter-spacing: 3px;
+            @include under(sm){
+                font-size: 11px;
+                width:100%;
+            }
+        }
+        &--adrees{
+            font-family: 'Bodoni Six ITC TT';
+            span.bellisima{
+                font-family: 'Bellissima Script Pro';
+                line-height: 1;
+                letter-spacing: 0px;
+                font-size: 20px;
+                font-weight: 600;
+                text-transform: none;
+            }
+            span.italic{
+                font-family: 'Bodoni SvtyTwo ITC TT';
+            }
+        }
+        &--pro{
+            width: 300px;
+            height: 37px;
+            margin: 0px;
+            @include under(sm){
+                width: 250px;
+                height: auto;
+                margin: 40px auto;
+            }
+            @include under(xs){
+                margin: 20px auto;
+            }
+        }
+        &--contact{
+            font-family: 'Bodoni Six ITC TT';
+            line-height: 3;
+            span{
+                font-family: 'Bodoni SvtyTwo ITC TT';
+            }
+            @include under(sm){
+                padding-bottom: 40px;
+            }
+            @include under(xs){
+                padding-bottom: 0px;
+            }
+        }
+    }
+
+}

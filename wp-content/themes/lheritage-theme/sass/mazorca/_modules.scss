@@ -1,0 +1,15 @@
+//_________________________ Modules _________________________ \\
+@import "modules/_splash";
+
+/* _____ G E N E R A L _____ */
+@import "modules/general/_header";
+@import "modules/general/_footer";
+
+/* _____ P A G E S _____ */
+@import "modules/pages/_home";
+@import "modules/pages/_events";
+@import "modules/pages/_restaurant";
+@import "modules/pages/_chefsTable";
+@import "modules/pages/_gallery";
+@import "modules/pages/_menu";
+@import "modules/pages/_error";

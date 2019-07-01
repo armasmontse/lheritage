@@ -1,0 +1,8 @@
+*.DS_Store
+/.sass-cache/
+*.scssc
+wp-config.php
+wp-content/uploads/
+config.codekit
+.htaccess
+error_log

@@ -1,0 +1,144 @@
+.footer {
+	$col-1: 100%/12;
+
+	width: 100%;
+	background-color: #13322A;
+	z-index: 1;
+
+	&__container {
+		max-width: 1200px;
+		margin: 0 auto;
+		// height: 380px;
+		// margin-bottom: 52px;
+		height: auto;
+		margin-bottom: 15px;
+		@include under(md) {
+			height: auto;
+		}
+		@include under(mobile) {
+			height: auto;
+			margin-bottom: 0;
+		}
+	}
+
+	&__logo {
+		width: 90%;
+		max-width: 210px;
+		height: auto;
+		margin: -52px auto 0 auto;
+		@include under(sm) {
+			margin: 30px auto 0 auto;
+		}
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	&__info {
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		margin-top: 19px;
+		@include under(mobile) {
+			width: 100%;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 25px;
+		}
+	}
+
+	&__columns {
+		width: 100%;
+		max-width: 243px;
+		@extend %paragraph-footer-address;
+		color: c(beige);
+		text-align: center;
+		margin-bottom: 25px;
+		@include under(mobile) {
+			margin-bottom: 20px;
+		}
+		.Bellissima {
+			line-height: 15px;
+			letter-spacing: 0px;
+			font-size: 15px;
+			font-weight: 600;
+			text-transform: none;
+		}
+	}
+	&__title {
+		@extend %BodoniSvtyBook-ita;
+	}
+
+	&__form {
+		position: relative;
+		&--input {
+			background-color: transparent;
+			border: 0;
+			border-bottom: 1px solid c(beige);
+			max-width: 192px;
+			padding: 0 0 3px 0;
+			&::placeholder {
+				@extend %BodoniSvtyBook;
+				font-size: 9px;
+				text-transform: uppercase;
+				color: c(beige);
+				opacity: 0.8;
+			}
+		}
+
+		&--btn {
+			@extend %BodoniSvtyBook;
+			font-size: 9px;
+			text-transform: uppercase;
+			color: c(beige);
+			position: absolute;
+			top: 0px;
+			right: 18px;
+			border: 0;
+			background-color: transparent;
+		}
+	}
+
+	&__social {
+		width: 100%;
+		height: 50px;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		@include under(mobile) {
+			height: auto;
+			margin-top: 0px;
+			margin-bottom: 20px;
+		}
+	}
+
+	&__redes {
+		width: 19px;
+		height: auto;
+		margin: 10px 15px 0 15px;
+		&.youtube {
+			width: 24px;
+		}
+		&.spotify {
+			width: 20px;
+		}
+	}
+
+	&__sponsors {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		&-image {
+			width: 60px;
+			height: auto;
+			margin: 20px 30px;
+		}
+	}
+
+}

@@ -1,0 +1,171 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Project-Id-Version: L'Heritage\n"
+"POT-Creation-Date: 2018-09-20 11:37-0500\n"
+"PO-Revision-Date: 2018-09-20 12:08-0500\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.8\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Last-Translator: \n"
+"Language: es_MX\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:5
+#, fuzzy
+msgid "<span>404</span> ¡Lo sentimos! No encontramos la página"
+msgstr "<span>404</span> ¡Lo sentimos! No encontramos la página"
+
+#: 404.php:6
+#, fuzzy
+msgid "Regresar"
+msgstr "Regresar"
+
+#: ajax/CltvoAjaxMail.php:110
+#, fuzzy
+msgid "Error en envío."
+msgstr "Error en envío."
+
+#: ajax/CltvoAjaxMail.php:135
+#, fuzzy
+msgid "Correo incorrecto"
+msgstr "Correo incorrecto"
+
+#: ajax/CltvoAjaxMail.php:144
+#, fuzzy
+msgid "- No hubo mensaje escrito -"
+msgstr "- No hubo mensaje escrito -"
+
+#: ajax/CltvoAjaxMail.php:162
+#, fuzzy
+msgid "Gracias por tu mensaje. Nos comunicaremos contigo pronto."
+msgstr "Gracias por tu mensaje. Nos comunicaremos contigo pronto."
+
+#: ajax/CltvoAjaxMail.php:177
+#, fuzzy
+msgid "Error en el envío"
+msgstr "Error en el envío"
+
+#: ajax/CltvoAjaxMail.php:182
+#, fuzzy
+msgid "¡Gracias!"
+msgstr "¡Gracias!"
+
+#: header.php:14
+#, fuzzy, php-format
+msgid "Page %s"
+msgstr "Page %s"
+
+#: views/general/footer.php:18
+#, fuzzy
+msgid "contacto"
+msgstr "contacto"
+
+#: views/general/footer.php:24
+#, fuzzy
+msgid "newsletter"
+msgstr "newsletter"
+
+#: views/general/footer.php:25
+#, fuzzy
+msgid "Recibe noticias de l’héritage"
+msgstr "Recibe noticias de l’héritage"
+
+#: views/general/footer.php:49
+#, fuzzy
+msgid "Enviar"
+msgstr "Enviar"
+
+#: views/general/footer.php:57
+#, fuzzy
+msgid "horarios"
+msgstr "horarios"
+
+#: views/pages/chefsTable/section-one.php:23
+#: views/pages/home/section-one.php:28
+#, fuzzy
+msgid "RESERVACIONES"
+msgstr "RESERVACIONES"
+
+#: views/pages/events/section-two.php:30
+#, fuzzy
+msgid "de"
+msgstr "de"
+
+#: views/pages/events/section-two.php:57
+#, fuzzy
+msgid "No hay eventos"
+msgstr "No hay eventos"
+
+#: views/pages/home/section-four.php:25
+#, fuzzy
+msgid "eventos en l’héritage"
+msgstr "eventos en l’héritage"
+
+#: views/pages/home/section-three.php:26
+#, fuzzy
+msgid "ver carta de alimentos"
+msgstr "ver carta de alimentos"
+
+#: views/pages/home/section-two.php:28
+#, fuzzy
+msgid "más sobre nosotros"
+msgstr "más sobre nosotros"
+
+#. Theme Name of the plugin/theme
+#, fuzzy
+msgid "L'Heritage"
+msgstr "L'Heritage"
+
+#. Description of the plugin/theme
+#, fuzzy
+msgid "Configuración básica para cualquier tema desarrollado por El Cultivo"
+msgstr "Configuración básica para cualquier tema desarrollado por El Cultivo"
+
+#. Author of the plugin/theme
+#, fuzzy
+msgid "El Cultivo"
+msgstr "El Cultivo"
+
+#. Author URI of the plugin/theme
+#, fuzzy
+msgid "http://elcultivo.mx"
+msgstr "http://elcultivo.mx"
+
+#. Template Name of the plugin/theme
+#, fuzzy
+msgid "ChefsTable */"
+msgstr "ChefsTable */"
+
+#. Template Name of the plugin/theme
+#, fuzzy
+msgid "Events */"
+msgstr "Events */"
+
+#. Template Name of the plugin/theme
+#, fuzzy
+msgid "Gallery */"
+msgstr "Gallery */"
+
+#. Template Name of the plugin/theme
+#, fuzzy
+msgid "Home */"
+msgstr "Home */"
+
+#. Template Name of the plugin/theme
+#, fuzzy
+msgid "Menu */"
+msgstr "Menu */"
+
+#. Template Name of the plugin/theme
+#, fuzzy
+msgid "Restaurant */"
+msgstr "Restaurant */"

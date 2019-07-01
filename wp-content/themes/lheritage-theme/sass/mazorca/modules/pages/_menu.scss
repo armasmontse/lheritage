@@ -1,0 +1,344 @@
+.menu {
+	width: 100%;
+	$col-1: 100%/12;
+	// height: calc(100vh - 88px);
+
+	// &__section-one {
+	// 	height: 100vh;
+	// 	background-image: linear-gradient(#0B1C18, #27614D);
+	// 	width: 100%;
+	// }
+
+	&__row {
+		position: relative;
+		width: 100%;
+		min-height: 1px;
+	}
+
+	&__container {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 1200px;
+		width: 100%;
+
+		&-fluid {
+			max-width: 100%;
+		}
+	}
+
+	&__col {
+		&-1-1{
+			position:relative;
+			width: 100%;
+		}
+
+	}
+
+	&__splash {
+		width: 100%;
+		min-height: 100vh; 
+
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    justify-content: center;
+	    text-align: center;
+		position: relative;
+
+		BACKGROUND-COLOR: #67625d;
+		BACKGROUND-BLEND-MODE: MULTIPLY;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__title {
+		@extend %title-big;
+		letter-spacing: 18px;
+		width: 100%;
+		max-width: 410px;
+		line-height: 67px;
+		@include under(mobile) {
+			font-size: 30px;
+			letter-spacing: 13px;
+			line-height: 47px;
+		}
+		span {
+			@extend %title-cursive;
+			letter-spacing: 0;
+			font-size: 113px;
+			display: block;
+			@include under(mobile) {
+				font-size: 80px;
+			}
+		}
+	}
+
+	&__section-two {
+		// height: auto;
+		// background-image: linear-gradient(#edebd8, #ffffff);
+		// width: 100%;
+	}
+
+	&__title-proximate {
+		@extend %title-proximate-events;
+		padding: 64px 0;
+		letter-spacing: 18px;
+		@include under(mobile) {
+			font-size: 30px;
+			letter-spacing: 13px;
+			padding: 50px 0 40px 0;
+			line-height: 47px;
+		}
+	}
+
+	&__coming {
+		padding-left: $col-1*1;
+		padding-right: $col-1*2;
+		@include under(md-910) {
+			padding: 0 20px;
+		}
+	}
+
+	&__image {
+		@extend %imagen-aspect-ratio;
+	}
+
+	&__arrow {
+		width: 41px;
+		height: auto;
+		position: absolute;
+		top: 90%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	&__background {
+		width: 100%;
+		min-height: 100vh; 
+
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    justify-content: center;
+	    text-align: center;
+		position: relative;
+
+		BACKGROUND-COLOR: #67625d;
+		BACKGROUND-BLEND-MODE: MULTIPLY;
+		
+		@include under(sm) {
+			min-height: 50vh; 
+		}
+	}
+
+	&__cart {
+		// position: absolute;
+		z-index: 2;
+		// // top: 10%;
+		// top: 150px;
+		// left: 19.4%;
+		width: 495px;
+		// height: auto;
+		width: 495px;
+		// max-height: 830px;
+		// max-height: 77vh;
+		min-height: 835px;
+		overflow: scroll;
+		// max-width: 495px;
+		background-color: #F4CBA9;
+		// padding: 55px 4.6%;
+		padding: 55px 85px;
+		
+		position: absolute;
+		@include under(md) {
+			width: 47%;
+			padding: 55px 4.6%;
+			max-width: 495px;
+		}
+		@include under(mobile) {
+			width: 100%;
+			padding: 55px 4.6%;
+			max-width: 100%;
+		}
+
+		&-title {
+			@extend %title-menu-cart;
+			@extend %wiziwig-styles;
+			margin-bottom: 43px;
+			@include under(sm) {
+				max-width: 300px;
+				margin: 0 auto;
+				margin-bottom: 43px;
+			}
+			span {
+				@extend %BodoniSvtyBook-ita;
+			}
+		}
+
+		&-text {
+			@extend %wiziwig-styles;
+			font-size: 16px;
+			width: 100%;
+			height: auto;
+			@include under(sm) {
+				max-width: 300px;
+				margin: 0 auto;
+			}
+			p {
+				@extend %BodoniSvtySCBook;
+				letter-spacing: 1.5px;
+				padding-bottom: 5px;
+			}
+			p em {
+				@extend %BodoniSvtyBook-ita;
+				line-height: 21px;
+				letter-spacing: 0;
+			}
+		}
+	}
+	
+	&__title-absolute {
+		position: absolute;
+		z-index: 2;
+		top: 5%;
+		left: 40%;
+		margin-bottom: 200px;
+	}
+
+	&__two-sections {
+		position: relative;
+		&:nth-child(2) {
+			.alignLeft .menu__cart {
+				background-color: #13322A;
+				
+				.menu__cart-title,
+				.menu__cart-text {
+					color: #C2C4A7;
+				}
+			}
+			
+		}
+	}
+
+	.alignLeft {
+		@include under(sm) {
+			position: relative;
+		}
+		@include under(mobile) {
+			position: relative;
+			display: flex;
+			flex-direction: column-reverse;
+		}
+
+		.menu__cart {
+			left: calc(50vw - 505px);
+			top: 23vh;
+			@include under(md) {
+				left: calc(50vw - 48%);
+			}
+			// @include under(sm) {
+			// 	width: 94%;
+			// 	left: calc(100vw - 91%);
+			// 	top: 10vh;
+			// }
+			@include under(sm) {
+				width: 100%;
+				position: initial;
+				max-width: 100%;
+				// top: 50%; 
+				// left: 50%;
+				// transform: translate(-50%, -50%);
+			}
+		}
+	}
+
+	.alignRight {
+		@include under(sm) {
+			position: relative;
+		}
+		@include under(mobile) {
+			position: relative;
+			display: flex;
+			flex-direction: column-reverse;
+		}
+
+		.menu__cart {
+			background-color: #EDEBD8;
+			// right: 50vw;
+			// left: inherit;
+			left: calc(50vw + 10px);
+			// top: 70vh;	
+			top: 120vh;
+			// @include under(sm) {
+			// 	width: 94%;
+			// 	left: initial;
+			// 	right: calc(100vw - 91%);
+			// 	top: 10vh;
+			// }
+			@include under(sm) {
+				width: 100%;
+				position: initial;
+				max-width: 100%;
+				// top: 50%; 
+				// left: 50%;
+				// transform: translate(-50%, -50%);
+			}
+		}
+	}
+
+	&__cava {
+		position: relative;
+		&-text {
+			@extend %BodoniSvtyBook;
+			color: #2D4838;
+			font-size: 25px;
+			text-transform: uppercase;
+			line-height: 45px;
+			letter-spacing: 4px;
+			position: absolute;
+			bottom: 0;
+			background-color: #C2C4A7;
+			padding: 35px 45px;
+			// right: 7%;
+			width: 400px;
+			text-align: center;
+			
+			z-index: 99999;
+			@include over(1060px) {
+				left: calc(50vw + 105px);
+			}
+			@include under(1060px) {
+			    right: 3.5%;
+			}
+			@include under(sm) {
+				width: 100%;
+				position: initial;
+				text-align: center;
+				padding: 10px 10px;
+				font-size: 20px;
+			} 	
+		}
+	}
+	
+}
